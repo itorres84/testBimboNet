@@ -16,9 +16,10 @@ final class AppCoordinator: Coordinator {
     }
     
     func start() -> UIViewController {
-        let splashCoordinaotor = SplashCoordinator()
-        let viewController = splashCoordinaotor.start()
+        let splashCoordinator: SplashCoordinator = SplashCoordinatorImp()
+        let viewController = splashCoordinator.start()
         window.rootViewController = viewController
+        window.makeKeyAndVisible()
         return viewController
     }
 }

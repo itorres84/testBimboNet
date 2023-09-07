@@ -8,15 +8,24 @@
 import Foundation
 import UIKit
 
-final class SplashCoordinator: Coordinator {
+protocol SplashCoordinator: Coordinator {
+    func goToLogin()
+}
+
+final class SplashCoordinatorImp: SplashCoordinator {
     
-    var splashViewController: SplashViewController
+    let factory: SplashFactory
     
-    init(splashViewController: SplashViewController = SplashViewController()) {
-        self.splashViewController = splashViewController
+    init(factory: SplashFactory = SplashFactoryImp()) {
+        self.factory = factory
     }
     
+
     func start() -> UIViewController {
-        return splashViewController
+        return factory.createSplashModule(coordinator: self)
+    }
+    
+    func goToLogin() {
+        print("show login Screen")
     }
 }
