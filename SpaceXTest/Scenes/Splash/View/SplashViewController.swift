@@ -6,9 +6,18 @@
 //
 
 import UIKit
+import Lottie
 
 class SplashViewController: UIViewController {
-
+    
+    lazy var animation: LottieAnimationView = {
+        let lottieAniamtion: LottieAnimationView = LottieAnimationView(name: "splash_animation")
+        lottieAniamtion.translatesAutoresizingMaskIntoConstraints = false
+        lottieAniamtion.contentMode = .scaleAspectFit
+        lottieAniamtion.loopMode = .loop
+        return lottieAniamtion
+    }()
+    
     var coordinator: SplashCoordinator?
     let viewModel: SplashViewModel
     
@@ -26,7 +35,23 @@ class SplashViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
+        self.addSubViews()
+        self.addConstraints()
         viewModel.fetchSynchronize()
+        animation.play()
+    }
+    
+    private func addSubViews() {
+        view.addSubview(animation)
+    }
+    
+    private func addConstraints() {
+        NSLayoutConstraint.activate([
+            animation.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            animation.centerYAnchor.constraint(equalTo: view.centerYAnchor),
+            animation.widthAnchor.constraint(equalToConstant: Dimensions.sizeAnimation),
+            animation.heightAnchor.constraint(equalToConstant: Dimensions.sizeAnimation)
+        ])
     }
     
     private func bindViewModel() {
@@ -35,8 +60,13 @@ class SplashViewController: UIViewController {
         }
     }
     
-    func goToLogin() {
+    private func goToLogin() {
         coordinator?.goToLogin()
     }
-    
+}
+
+extension SplashViewController {
+    struct Dimensions {
+        static let sizeAnimation: CGFloat = 300
+    }
 }

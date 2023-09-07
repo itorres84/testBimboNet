@@ -20,6 +20,8 @@
 		689B94F52AAA65DD0019267A /* SplashCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689B94F42AAA65DD0019267A /* SplashCoordinator.swift */; };
 		689B94F82AAA661A0019267A /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689B94F72AAA661A0019267A /* Coordinator.swift */; };
 		689B94FB2AAA67170019267A /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689B94FA2AAA67170019267A /* AppCoordinator.swift */; };
+		68F937A52AAA9781004F8327 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 68F937A42AAA9781004F8327 /* Lottie */; };
+		68F937AA2AAA97BA004F8327 /* splash_animation.json in Resources */ = {isa = PBXBuildFile; fileRef = 68F937A92AAA97BA004F8327 /* splash_animation.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,7 @@
 		689B94F42AAA65DD0019267A /* SplashCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashCoordinator.swift; sourceTree = "<group>"; };
 		689B94F72AAA661A0019267A /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		689B94FA2AAA67170019267A /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		68F937A92AAA97BA004F8327 /* splash_animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = splash_animation.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +48,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				684B7C722AA9A0AD004DBE54 /* Alamofire in Frameworks */,
+				68F937A52AAA9781004F8327 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +74,7 @@
 		681E4F702AA99B5700DD07DF /* SpaceXTest */ = {
 			isa = PBXGroup;
 			children = (
+				68F937A62AAA978E004F8327 /* Resources */,
 				689B94F62AAA65F80019267A /* Base */,
 				689B94F02AAA65030019267A /* Scenes */,
 				681E4F712AA99B5700DD07DF /* AppDelegate.swift */,
@@ -151,6 +156,30 @@
 			path = Main;
 			sourceTree = "<group>";
 		};
+		68F937A62AAA978E004F8327 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				68F937A72AAA9799004F8327 /* Animations */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		68F937A72AAA9799004F8327 /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				68F937A82AAA97A1004F8327 /* Splash */,
+			);
+			path = Animations;
+			sourceTree = "<group>";
+		};
+		68F937A82AAA97A1004F8327 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				68F937A92AAA97BA004F8327 /* splash_animation.json */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -169,6 +198,7 @@
 			name = SpaceXTest;
 			packageProductDependencies = (
 				684B7C712AA9A0AD004DBE54 /* Alamofire */,
+				68F937A42AAA9781004F8327 /* Lottie */,
 			);
 			productName = SpaceXTest;
 			productReference = 681E4F6E2AA99B5700DD07DF /* SpaceXTest.app */;
@@ -200,6 +230,7 @@
 			mainGroup = 681E4F652AA99B5700DD07DF;
 			packageReferences = (
 				684B7C702AA9A0AD004DBE54 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				68F937A32AAA9781004F8327 /* XCRemoteSwiftPackageReference "lottie-spm" */,
 			);
 			productRefGroup = 681E4F6F2AA99B5700DD07DF /* Products */;
 			projectDirPath = "";
@@ -216,6 +247,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				681E4F7E2AA99B5800DD07DF /* LaunchScreen.storyboard in Resources */,
+				68F937AA2AAA97BA004F8327 /* splash_animation.json in Resources */,
 				681E4F7B2AA99B5800DD07DF /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -454,6 +486,14 @@
 				minimumVersion = 5.0.0;
 			};
 		};
+		68F937A32AAA9781004F8327 /* XCRemoteSwiftPackageReference "lottie-spm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-spm.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -461,6 +501,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 684B7C702AA9A0AD004DBE54 /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
+		};
+		68F937A42AAA9781004F8327 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 68F937A32AAA9781004F8327 /* XCRemoteSwiftPackageReference "lottie-spm" */;
+			productName = Lottie;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
