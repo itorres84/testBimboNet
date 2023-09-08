@@ -22,6 +22,17 @@
 		689B94FB2AAA67170019267A /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689B94FA2AAA67170019267A /* AppCoordinator.swift */; };
 		68F937A52AAA9781004F8327 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 68F937A42AAA9781004F8327 /* Lottie */; };
 		68F937AA2AAA97BA004F8327 /* splash_animation.json in Resources */ = {isa = PBXBuildFile; fileRef = 68F937A92AAA97BA004F8327 /* splash_animation.json */; };
+		68F937AD2AAA9DB8004F8327 /* SynchronizeStorageUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F937AC2AAA9DB8004F8327 /* SynchronizeStorageUseCase.swift */; };
+		68F937AF2AAA9DFB004F8327 /* IsRemoteDataIsSynchronizedUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F937AE2AAA9DFB004F8327 /* IsRemoteDataIsSynchronizedUseCase.swift */; };
+		68F937B12AAA9F44004F8327 /* RemoteDataIsSynProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F937B02AAA9F44004F8327 /* RemoteDataIsSynProvider.swift */; };
+		68F937B42AAAA02F004F8327 /* KeysUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F937B32AAAA02F004F8327 /* KeysUserDefaults.swift */; };
+		68F937B72AAAB5EF004F8327 /* Mission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F937B62AAAB5EF004F8327 /* Mission.swift */; };
+		68F937BB2AAAB977004F8327 /* MissionResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F937BA2AAAB977004F8327 /* MissionResponseModel.swift */; };
+		68F937BE2AAABCC1004F8327 /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F937BD2AAABCC1004F8327 /* APIRouter.swift */; };
+		68F937C02AAABCEA004F8327 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F937BF2AAABCEA004F8327 /* Constants.swift */; };
+		68F937C22AAABDE1004F8327 /* APIConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F937C12AAABDE1004F8327 /* APIConfiguration.swift */; };
+		68F937C42AAABE08004F8327 /* MisionEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F937C32AAABE08004F8327 /* MisionEndpoint.swift */; };
+		68F937C62AAABF7B004F8327 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F937C52AAABF7B004F8327 /* APIClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +51,17 @@
 		689B94F72AAA661A0019267A /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		689B94FA2AAA67170019267A /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		68F937A92AAA97BA004F8327 /* splash_animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = splash_animation.json; sourceTree = "<group>"; };
+		68F937AC2AAA9DB8004F8327 /* SynchronizeStorageUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SynchronizeStorageUseCase.swift; sourceTree = "<group>"; };
+		68F937AE2AAA9DFB004F8327 /* IsRemoteDataIsSynchronizedUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsRemoteDataIsSynchronizedUseCase.swift; sourceTree = "<group>"; };
+		68F937B02AAA9F44004F8327 /* RemoteDataIsSynProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteDataIsSynProvider.swift; sourceTree = "<group>"; };
+		68F937B32AAAA02F004F8327 /* KeysUserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeysUserDefaults.swift; sourceTree = "<group>"; };
+		68F937B62AAAB5EF004F8327 /* Mission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mission.swift; sourceTree = "<group>"; };
+		68F937BA2AAAB977004F8327 /* MissionResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionResponseModel.swift; sourceTree = "<group>"; };
+		68F937BD2AAABCC1004F8327 /* APIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
+		68F937BF2AAABCEA004F8327 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		68F937C12AAABDE1004F8327 /* APIConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConfiguration.swift; sourceTree = "<group>"; };
+		68F937C32AAABE08004F8327 /* MisionEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MisionEndpoint.swift; sourceTree = "<group>"; };
+		68F937C52AAABF7B004F8327 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,54 +96,41 @@
 		681E4F702AA99B5700DD07DF /* SpaceXTest */ = {
 			isa = PBXGroup;
 			children = (
+				68F937BC2AAABC7E004F8327 /* Networking */,
+				68F937B92AAAB92F004F8327 /* Domain */,
 				68F937A62AAA978E004F8327 /* Resources */,
 				689B94F62AAA65F80019267A /* Base */,
 				689B94F02AAA65030019267A /* Scenes */,
-				681E4F712AA99B5700DD07DF /* AppDelegate.swift */,
-				681E4F732AA99B5700DD07DF /* SceneDelegate.swift */,
-				681E4F7A2AA99B5800DD07DF /* Assets.xcassets */,
-				681E4F7C2AA99B5800DD07DF /* LaunchScreen.storyboard */,
 				681E4F7F2AA99B5800DD07DF /* Info.plist */,
 			);
 			path = SpaceXTest;
 			sourceTree = "<group>";
 		};
-		688B88F32AAA7B4500CF8C59 /* View */ = {
+		688B88F42AAA7B5500CF8C59 /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
-				689B94F22AAA653C0019267A /* SplashViewController.swift */,
-				688B88F12AAA7B1C00CF8C59 /* SplashViewModel.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		688B88F42AAA7B5500CF8C59 /* UseCase */ = {
-			isa = PBXGroup;
-			children = (
+				68F937B52AAAB5D2004F8327 /* Model */,
 				688B88F52AAA7BB300CF8C59 /* SynchronizeRemoteVariablesUseCase.swift */,
+				68F937AC2AAA9DB8004F8327 /* SynchronizeStorageUseCase.swift */,
+				68F937AE2AAA9DFB004F8327 /* IsRemoteDataIsSynchronizedUseCase.swift */,
 			);
-			path = UseCase;
+			path = UseCases;
 			sourceTree = "<group>";
 		};
-		688B88F72AAA7C4100CF8C59 /* Provider */ = {
+		688B88F72AAA7C4100CF8C59 /* Providers */ = {
 			isa = PBXGroup;
 			children = (
+				68F937B82AAAB90E004F8327 /* Model */,
 				688B88F82AAA7C6900CF8C59 /* RemoteConfigProvider.swift */,
+				68F937B02AAA9F44004F8327 /* RemoteDataIsSynProvider.swift */,
 			);
-			path = Provider;
-			sourceTree = "<group>";
-		};
-		688B88FA2AAA86E400CF8C59 /* Factory */ = {
-			isa = PBXGroup;
-			children = (
-				688B88FB2AAA86F300CF8C59 /* SplashFactory.swift */,
-			);
-			path = Factory;
+			path = Providers;
 			sourceTree = "<group>";
 		};
 		689B94F02AAA65030019267A /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				68F937AB2AAA9BAB004F8327 /* Home */,
 				689B94F92AAA67040019267A /* Main */,
 				689B94F12AAA65230019267A /* Splash */,
 			);
@@ -131,10 +140,9 @@
 		689B94F12AAA65230019267A /* Splash */ = {
 			isa = PBXGroup;
 			children = (
-				688B88FA2AAA86E400CF8C59 /* Factory */,
-				688B88F72AAA7C4100CF8C59 /* Provider */,
-				688B88F42AAA7B5500CF8C59 /* UseCase */,
-				688B88F32AAA7B4500CF8C59 /* View */,
+				688B88FB2AAA86F300CF8C59 /* SplashFactory.swift */,
+				689B94F22AAA653C0019267A /* SplashViewController.swift */,
+				688B88F12AAA7B1C00CF8C59 /* SplashViewModel.swift */,
 				689B94F42AAA65DD0019267A /* SplashCoordinator.swift */,
 			);
 			path = Splash;
@@ -143,6 +151,7 @@
 		689B94F62AAA65F80019267A /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				68F937B22AAAA019004F8327 /* UserDefaults */,
 				689B94F72AAA661A0019267A /* Coordinator.swift */,
 			);
 			path = Base;
@@ -151,6 +160,9 @@
 		689B94F92AAA67040019267A /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				681E4F7C2AA99B5800DD07DF /* LaunchScreen.storyboard */,
+				681E4F712AA99B5700DD07DF /* AppDelegate.swift */,
+				681E4F732AA99B5700DD07DF /* SceneDelegate.swift */,
 				689B94FA2AAA67170019267A /* AppCoordinator.swift */,
 			);
 			path = Main;
@@ -159,6 +171,7 @@
 		68F937A62AAA978E004F8327 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				681E4F7A2AA99B5800DD07DF /* Assets.xcassets */,
 				68F937A72AAA9799004F8327 /* Animations */,
 			);
 			path = Resources;
@@ -178,6 +191,58 @@
 				68F937A92AAA97BA004F8327 /* splash_animation.json */,
 			);
 			path = Splash;
+			sourceTree = "<group>";
+		};
+		68F937AB2AAA9BAB004F8327 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		68F937B22AAAA019004F8327 /* UserDefaults */ = {
+			isa = PBXGroup;
+			children = (
+				68F937B32AAAA02F004F8327 /* KeysUserDefaults.swift */,
+			);
+			path = UserDefaults;
+			sourceTree = "<group>";
+		};
+		68F937B52AAAB5D2004F8327 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				68F937B62AAAB5EF004F8327 /* Mission.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		68F937B82AAAB90E004F8327 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				68F937BA2AAAB977004F8327 /* MissionResponseModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		68F937B92AAAB92F004F8327 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				688B88F72AAA7C4100CF8C59 /* Providers */,
+				688B88F42AAA7B5500CF8C59 /* UseCases */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		68F937BC2AAABC7E004F8327 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				68F937BD2AAABCC1004F8327 /* APIRouter.swift */,
+				68F937BF2AAABCEA004F8327 /* Constants.swift */,
+				68F937C12AAABDE1004F8327 /* APIConfiguration.swift */,
+				68F937C32AAABE08004F8327 /* MisionEndpoint.swift */,
+				68F937C52AAABF7B004F8327 /* APIClient.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,12 +328,23 @@
 				681E4F722AA99B5700DD07DF /* AppDelegate.swift in Sources */,
 				689B94F82AAA661A0019267A /* Coordinator.swift in Sources */,
 				681E4F742AA99B5700DD07DF /* SceneDelegate.swift in Sources */,
+				68F937AD2AAA9DB8004F8327 /* SynchronizeStorageUseCase.swift in Sources */,
+				68F937C42AAABE08004F8327 /* MisionEndpoint.swift in Sources */,
 				688B88F22AAA7B1C00CF8C59 /* SplashViewModel.swift in Sources */,
+				68F937C22AAABDE1004F8327 /* APIConfiguration.swift in Sources */,
+				68F937C62AAABF7B004F8327 /* APIClient.swift in Sources */,
+				68F937B42AAAA02F004F8327 /* KeysUserDefaults.swift in Sources */,
+				68F937BB2AAAB977004F8327 /* MissionResponseModel.swift in Sources */,
 				688B88F62AAA7BB300CF8C59 /* SynchronizeRemoteVariablesUseCase.swift in Sources */,
+				68F937BE2AAABCC1004F8327 /* APIRouter.swift in Sources */,
 				689B94F32AAA653C0019267A /* SplashViewController.swift in Sources */,
+				68F937B12AAA9F44004F8327 /* RemoteDataIsSynProvider.swift in Sources */,
+				68F937B72AAAB5EF004F8327 /* Mission.swift in Sources */,
 				688B88FC2AAA86F300CF8C59 /* SplashFactory.swift in Sources */,
+				68F937AF2AAA9DFB004F8327 /* IsRemoteDataIsSynchronizedUseCase.swift in Sources */,
 				689B94F52AAA65DD0019267A /* SplashCoordinator.swift in Sources */,
 				689B94FB2AAA67170019267A /* AppCoordinator.swift in Sources */,
+				68F937C02AAABCEA004F8327 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

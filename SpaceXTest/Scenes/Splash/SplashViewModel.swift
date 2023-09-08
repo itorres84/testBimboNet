@@ -9,7 +9,6 @@ import Foundation
 import Combine
 
 final class SplashViewModel {
-    
     var synchronizeSuccess: Int? {
         didSet {
             bindSynchronizeViewModelToController()
@@ -17,15 +16,22 @@ final class SplashViewModel {
     }
     var bindSynchronizeViewModelToController: () -> () = {}
     private let synchronizeRemoteVariablesUseCase: SynchronizeRemoteVariablesUseCase
+    private let isRemoteDataIsSynchronizedUseCase: IsRemoteDataIsSynchronizedUseCase
     
-    init(synchronizeRemoteVariablesUseCase: SynchronizeRemoteVariablesUseCase) {
+    init(synchronizeRemoteVariablesUseCase: SynchronizeRemoteVariablesUseCase,
+         isRemoteDataIsSynchronizedUseCase: IsRemoteDataIsSynchronizedUseCase) {
         self.synchronizeRemoteVariablesUseCase = synchronizeRemoteVariablesUseCase
+        self.isRemoteDataIsSynchronizedUseCase = isRemoteDataIsSynchronizedUseCase
     }
     
     func fetchSynchronize() {
-        synchronizeRemoteVariablesUseCase.synchronize { [weak self] in
-            self?.synchronizeSuccess = 1
+        
+        if isRemoteDataIsSynchronizedUseCase.execute() {
+            
+        } else {
+            synchronizeRemoteVariablesUseCase.synchronize { [weak self] in
+                self?.synchronizeSuccess = 1
+            }
         }
     }
-    
 }

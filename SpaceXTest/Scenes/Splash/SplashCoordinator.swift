@@ -20,7 +20,6 @@ final class SplashCoordinatorImp: SplashCoordinator {
         self.factory = factory
     }
     
-
     func start() -> UIViewController {
         return factory.createSplashModule(coordinator: self)
     }

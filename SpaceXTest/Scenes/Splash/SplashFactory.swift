@@ -17,7 +17,9 @@ final class SplashFactoryImp: SplashFactory {
     func createSplashModule(coordinator: SplashCoordinator) -> UIViewController {
         let provider: RemoteConfigProvider = RemoteConfigProviderImp()
         let useCase: SynchronizeRemoteVariablesUseCase = SynchronizeRemoteVariablesUseCaseImp(provider: provider)
-        let viewModel: SplashViewModel = SplashViewModel(synchronizeRemoteVariablesUseCase: useCase)
+        let isRemoteDataIsSynchronizedUseCase: IsRemoteDataIsSynchronizedUseCase = IsRemoteDataIsSynchronizedUseCaseImp()
+        let viewModel: SplashViewModel = SplashViewModel(synchronizeRemoteVariablesUseCase: useCase,
+                                                         isRemoteDataIsSynchronizedUseCase: isRemoteDataIsSynchronizedUseCase)
         let viewController: SplashViewController = SplashViewController(viewModel: viewModel)
         viewController.coordinator = coordinator
         return viewController

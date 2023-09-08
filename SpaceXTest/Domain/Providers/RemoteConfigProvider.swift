@@ -13,8 +13,15 @@ protocol RemoteConfigProvider {
 
 final class RemoteConfigProviderImp: RemoteConfigProvider {
     func fetch(completion: @escaping () -> ()) {
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
-            return completion()
+        APIClient.missions { result in
+            switch result {
+            case .success(let success):
+                dump(success)
+                completion()
+            case .failure(let failure):
+                print(failure.localizedDescription)
+                completion()
+            }
         }
     }
 }
