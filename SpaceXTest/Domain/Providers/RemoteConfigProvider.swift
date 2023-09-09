@@ -15,12 +15,10 @@ final class RemoteConfigProviderImp: RemoteConfigProvider {
     func fetch(completion: @escaping () -> ()) {
         APIClient.missions { result in
             switch result {
-            case .success(let success):
-                dump(success)
-                completion()
+            case .success(let missions):
+                StorageClient.saveMissions(missions: missions, completion: completion)
             case .failure(let failure):
-                print(failure.localizedDescription)
-                completion()
+                debugPrint("Remote config error: \(failure.localizedDescription)")
             }
         }
     }

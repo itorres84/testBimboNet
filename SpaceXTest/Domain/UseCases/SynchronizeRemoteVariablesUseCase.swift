@@ -14,13 +14,18 @@ protocol SynchronizeRemoteVariablesUseCase {
 final class SynchronizeRemoteVariablesUseCaseImp: SynchronizeRemoteVariablesUseCase {
     
     let provider: RemoteConfigProvider
+    let storageProvider: RemoteDataIsSynProvider
     
-    init(provider: RemoteConfigProvider) {
+    init(provider: RemoteConfigProvider, storageProvider: RemoteDataIsSynProvider) {
         self.provider = provider
+        self.storageProvider = storageProvider
     }
     
     func synchronize(completion: @escaping () -> ()) {
-        self.provider.fetch(completion: completion)
+        provider.fetch { [weak self] in
+            self?.storageProvider.saveSyncToday()
+            completion()
+        }
     }
 }
 

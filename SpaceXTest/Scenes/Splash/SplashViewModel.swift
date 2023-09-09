@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import Combine
 
 final class SplashViewModel {
     var synchronizeSuccess: Int? {
@@ -25,9 +24,8 @@ final class SplashViewModel {
     }
     
     func fetchSynchronize() {
-        
         if isRemoteDataIsSynchronizedUseCase.execute() {
-            
+            synchronizeSuccess = 1
         } else {
             synchronizeRemoteVariablesUseCase.synchronize { [weak self] in
                 self?.synchronizeSuccess = 1

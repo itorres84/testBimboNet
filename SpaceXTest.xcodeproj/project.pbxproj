@@ -33,6 +33,13 @@
 		68F937C22AAABDE1004F8327 /* APIConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F937C12AAABDE1004F8327 /* APIConfiguration.swift */; };
 		68F937C42AAABE08004F8327 /* MisionEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F937C32AAABE08004F8327 /* MisionEndpoint.swift */; };
 		68F937C62AAABF7B004F8327 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F937C52AAABF7B004F8327 /* APIClient.swift */; };
+		68F937C92AAAC700004F8327 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 68F937C82AAAC700004F8327 /* RealmSwift */; };
+		68F937CC2AAAC9B4004F8327 /* RealmMission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F937CB2AAAC9B4004F8327 /* RealmMission.swift */; };
+		68F937CE2AAACBCD004F8327 /* StorageClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F937CD2AAACBCD004F8327 /* StorageClient.swift */; };
+		68F937D52AAC3270004F8327 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F937D42AAC3270004F8327 /* HomeViewController.swift */; };
+		68F937D72AAC32EA004F8327 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F937D62AAC32EA004F8327 /* HomeViewModel.swift */; };
+		68F937D92AAC39E5004F8327 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F937D82AAC39E5004F8327 /* HomeCoordinator.swift */; };
+		68F937DB2AAC3A30004F8327 /* HomeFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F937DA2AAC3A30004F8327 /* HomeFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +69,12 @@
 		68F937C12AAABDE1004F8327 /* APIConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConfiguration.swift; sourceTree = "<group>"; };
 		68F937C32AAABE08004F8327 /* MisionEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MisionEndpoint.swift; sourceTree = "<group>"; };
 		68F937C52AAABF7B004F8327 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		68F937CB2AAAC9B4004F8327 /* RealmMission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmMission.swift; sourceTree = "<group>"; };
+		68F937CD2AAACBCD004F8327 /* StorageClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageClient.swift; sourceTree = "<group>"; };
+		68F937D42AAC3270004F8327 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		68F937D62AAC32EA004F8327 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		68F937D82AAC39E5004F8327 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		68F937DA2AAC3A30004F8327 /* HomeFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68F937C92AAAC700004F8327 /* RealmSwift in Frameworks */,
 				684B7C722AA9A0AD004DBE54 /* Alamofire in Frameworks */,
 				68F937A52AAA9781004F8327 /* Lottie in Frameworks */,
 			);
@@ -96,6 +110,7 @@
 		681E4F702AA99B5700DD07DF /* SpaceXTest */ = {
 			isa = PBXGroup;
 			children = (
+				68F937CA2AAAC90A004F8327 /* Storage */,
 				68F937BC2AAABC7E004F8327 /* Networking */,
 				68F937B92AAAB92F004F8327 /* Domain */,
 				68F937A62AAA978E004F8327 /* Resources */,
@@ -196,6 +211,10 @@
 		68F937AB2AAA9BAB004F8327 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				68F937D42AAC3270004F8327 /* HomeViewController.swift */,
+				68F937D62AAC32EA004F8327 /* HomeViewModel.swift */,
+				68F937D82AAC39E5004F8327 /* HomeCoordinator.swift */,
+				68F937DA2AAC3A30004F8327 /* HomeFactory.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -245,6 +264,15 @@
 			path = Networking;
 			sourceTree = "<group>";
 		};
+		68F937CA2AAAC90A004F8327 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				68F937CB2AAAC9B4004F8327 /* RealmMission.swift */,
+				68F937CD2AAACBCD004F8327 /* StorageClient.swift */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -264,6 +292,7 @@
 			packageProductDependencies = (
 				684B7C712AA9A0AD004DBE54 /* Alamofire */,
 				68F937A42AAA9781004F8327 /* Lottie */,
+				68F937C82AAAC700004F8327 /* RealmSwift */,
 			);
 			productName = SpaceXTest;
 			productReference = 681E4F6E2AA99B5700DD07DF /* SpaceXTest.app */;
@@ -296,6 +325,7 @@
 			packageReferences = (
 				684B7C702AA9A0AD004DBE54 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				68F937A32AAA9781004F8327 /* XCRemoteSwiftPackageReference "lottie-spm" */,
+				68F937C72AAAC700004F8327 /* XCRemoteSwiftPackageReference "realm-swift" */,
 			);
 			productRefGroup = 681E4F6F2AA99B5700DD07DF /* Products */;
 			projectDirPath = "";
@@ -327,20 +357,26 @@
 				688B88F92AAA7C6900CF8C59 /* RemoteConfigProvider.swift in Sources */,
 				681E4F722AA99B5700DD07DF /* AppDelegate.swift in Sources */,
 				689B94F82AAA661A0019267A /* Coordinator.swift in Sources */,
+				68F937D72AAC32EA004F8327 /* HomeViewModel.swift in Sources */,
 				681E4F742AA99B5700DD07DF /* SceneDelegate.swift in Sources */,
+				68F937CC2AAAC9B4004F8327 /* RealmMission.swift in Sources */,
 				68F937AD2AAA9DB8004F8327 /* SynchronizeStorageUseCase.swift in Sources */,
 				68F937C42AAABE08004F8327 /* MisionEndpoint.swift in Sources */,
+				68F937DB2AAC3A30004F8327 /* HomeFactory.swift in Sources */,
 				688B88F22AAA7B1C00CF8C59 /* SplashViewModel.swift in Sources */,
 				68F937C22AAABDE1004F8327 /* APIConfiguration.swift in Sources */,
 				68F937C62AAABF7B004F8327 /* APIClient.swift in Sources */,
 				68F937B42AAAA02F004F8327 /* KeysUserDefaults.swift in Sources */,
+				68F937D52AAC3270004F8327 /* HomeViewController.swift in Sources */,
 				68F937BB2AAAB977004F8327 /* MissionResponseModel.swift in Sources */,
 				688B88F62AAA7BB300CF8C59 /* SynchronizeRemoteVariablesUseCase.swift in Sources */,
 				68F937BE2AAABCC1004F8327 /* APIRouter.swift in Sources */,
+				68F937CE2AAACBCD004F8327 /* StorageClient.swift in Sources */,
 				689B94F32AAA653C0019267A /* SplashViewController.swift in Sources */,
 				68F937B12AAA9F44004F8327 /* RemoteDataIsSynProvider.swift in Sources */,
 				68F937B72AAAB5EF004F8327 /* Mission.swift in Sources */,
 				688B88FC2AAA86F300CF8C59 /* SplashFactory.swift in Sources */,
+				68F937D92AAC39E5004F8327 /* HomeCoordinator.swift in Sources */,
 				68F937AF2AAA9DFB004F8327 /* IsRemoteDataIsSynchronizedUseCase.swift in Sources */,
 				689B94F52AAA65DD0019267A /* SplashCoordinator.swift in Sources */,
 				689B94FB2AAA67170019267A /* AppCoordinator.swift in Sources */,
@@ -570,6 +606,14 @@
 				minimumVersion = 4.0.0;
 			};
 		};
+		68F937C72AAAC700004F8327 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -582,6 +626,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 68F937A32AAA9781004F8327 /* XCRemoteSwiftPackageReference "lottie-spm" */;
 			productName = Lottie;
+		};
+		68F937C82AAAC700004F8327 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 68F937C72AAAC700004F8327 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

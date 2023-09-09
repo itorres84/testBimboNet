@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import RealmSwift
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -14,6 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        doRealmMigration()
         return true
     }
 
@@ -34,3 +36,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
+extension AppDelegate {
+    /// Migrate Realm schemaVersion
+    func doRealmMigration() {
+
+        debugPrint("📀 Realm DB: \(String(describing: Realm.Configuration.defaultConfiguration.fileURL))")
+
+        let config = Realm.Configuration(schemaVersion: 1, migrationBlock: { _, _ in
+            // Handle migration values given the case, implement if needed.
+        })
+
+        Realm.Configuration.defaultConfiguration = config
+        do {
+            _ = try Realm()
+        } catch {
+            debugPrint("Increment schemaVersion Realm")
+        }
+    }
+
+}

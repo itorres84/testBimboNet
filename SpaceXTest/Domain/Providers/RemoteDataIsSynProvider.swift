@@ -9,6 +9,7 @@ import Foundation
 
 protocol RemoteDataIsSynProvider {
     func isRemoteSyncToday() -> Bool
+    func saveSyncToday()
 }
 
 final class RemoteDataIsSynProviderImp: RemoteDataIsSynProvider {
@@ -20,5 +21,9 @@ final class RemoteDataIsSynProviderImp: RemoteDataIsSynProvider {
             return !Calendar.current.isDateInYesterday(date)
         }
         return false
+    }
+    
+    func saveSyncToday() {
+        defaults.set(Date(), forKey: KeysUserDefaults.dateSync.rawValue)
     }
 }
