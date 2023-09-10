@@ -15,6 +15,7 @@ struct Mission {
     let launchSite: LaunchSite
     let rocket: Rocket
     let details: String
+    let links: Links
 }
 
 struct LaunchSite {
@@ -27,6 +28,8 @@ struct Rocket {
 }
 
 struct Links {
+    let missionPatch: String
+    let missionPatchSmall: String
     let articleLink: String
     let youtubeId: String
 }

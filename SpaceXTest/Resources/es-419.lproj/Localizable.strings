@@ -1,0 +1,9 @@
+/* 
+  Localizable.strings
+  SpaceXTest
+
+  Created by Ingeniosi on 09/09/23.
+  
+*/
+
+"home.view.title" = "Launches Past";

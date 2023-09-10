@@ -15,16 +15,22 @@ protocol SplashCoordinator: Coordinator {
 final class SplashCoordinatorImp: SplashCoordinator {
     
     let factory: SplashFactory
+    var viewController: UIViewController?
     
     init(factory: SplashFactory = SplashFactoryImp()) {
         self.factory = factory
     }
     
     func start() -> UIViewController {
-        return factory.createSplashModule(coordinator: self)
+        viewController = factory.createSplashModule(coordinator: self)
+        guard let splashViewController: UIViewController = viewController else {
+            fatalError("instance splash no exist")
+        }
+        return splashViewController
     }
     
     func goToLogin() {
-        print("show login Screen")
+        let homeCoordinator: HomeCoordinatorImp = HomeCoordinatorImp(factory: HomeFactoryImp())
+        viewController?.present(homeCoordinator.start(), animated: true)
     }
 }

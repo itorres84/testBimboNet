@@ -26,6 +26,8 @@ struct MissionResponseModel: Codable {
 }
 
 struct LinksResponseModel: Codable {
+    let missionPatch: String?
+    let missionPatchSmall: String?
     let articleLink: String?
     let youtubeId: String
     let flickrImages: [String]?
@@ -34,6 +36,8 @@ struct LinksResponseModel: Codable {
         case articleLink = "article_link"
         case youtubeId = "youtube_id"
         case flickrImages = "flickr_images"
+        case missionPatch = "mission_patch"
+        case missionPatchSmall = "mission_patch_small"
     }
 }
 

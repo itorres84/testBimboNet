@@ -40,6 +40,14 @@
 		68F937D72AAC32EA004F8327 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F937D62AAC32EA004F8327 /* HomeViewModel.swift */; };
 		68F937D92AAC39E5004F8327 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F937D82AAC39E5004F8327 /* HomeCoordinator.swift */; };
 		68F937DB2AAC3A30004F8327 /* HomeFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F937DA2AAC3A30004F8327 /* HomeFactory.swift */; };
+		68F937DD2AAC3B37004F8327 /* GetMissionsFromStorageUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F937DC2AAC3B37004F8327 /* GetMissionsFromStorageUseCase.swift */; };
+		68F937DF2AAC3BB8004F8327 /* StorageMissionsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F937DE2AAC3BB8004F8327 /* StorageMissionsProvider.swift */; };
+		68F937E22AACBD17004F8327 /* MissionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F937E12AACBD17004F8327 /* MissionTableViewCell.swift */; };
+		68F937E52AACBD77004F8327 /* UITableView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F937E42AACBD77004F8327 /* UITableView+Extensions.swift */; };
+		68F937EA2AAD07A5004F8327 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 68F937EC2AAD07A5004F8327 /* Localizable.strings */; };
+		68F937F02AAD0850004F8327 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F937EF2AAD0850004F8327 /* String+Extensions.swift */; };
+		68F937F32AAD08C4004F8327 /* Localize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F937F22AAD08C4004F8327 /* Localize.swift */; };
+		68F937F52AAD1613004F8327 /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F937F42AAD1613004F8327 /* UIImageView+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -75,6 +83,16 @@
 		68F937D62AAC32EA004F8327 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		68F937D82AAC39E5004F8327 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
 		68F937DA2AAC3A30004F8327 /* HomeFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFactory.swift; sourceTree = "<group>"; };
+		68F937DC2AAC3B37004F8327 /* GetMissionsFromStorageUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetMissionsFromStorageUseCase.swift; sourceTree = "<group>"; };
+		68F937DE2AAC3BB8004F8327 /* StorageMissionsProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageMissionsProvider.swift; sourceTree = "<group>"; };
+		68F937E12AACBD17004F8327 /* MissionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionTableViewCell.swift; sourceTree = "<group>"; };
+		68F937E42AACBD77004F8327 /* UITableView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extensions.swift"; sourceTree = "<group>"; };
+		68F937E62AAD073F004F8327 /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-419"; path = "es-419.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		68F937EB2AAD07A5004F8327 /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-419"; path = "es-419.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		68F937EE2AAD07B4004F8327 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		68F937EF2AAD0850004F8327 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		68F937F22AAD08C4004F8327 /* Localize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localize.swift; sourceTree = "<group>"; };
+		68F937F42AAD1613004F8327 /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +128,8 @@
 		681E4F702AA99B5700DD07DF /* SpaceXTest */ = {
 			isa = PBXGroup;
 			children = (
+				68F937F12AAD08AC004F8327 /* Helpers */,
+				68F937E32AACBD58004F8327 /* Extensions */,
 				68F937CA2AAAC90A004F8327 /* Storage */,
 				68F937BC2AAABC7E004F8327 /* Networking */,
 				68F937B92AAAB92F004F8327 /* Domain */,
@@ -128,6 +148,7 @@
 				688B88F52AAA7BB300CF8C59 /* SynchronizeRemoteVariablesUseCase.swift */,
 				68F937AC2AAA9DB8004F8327 /* SynchronizeStorageUseCase.swift */,
 				68F937AE2AAA9DFB004F8327 /* IsRemoteDataIsSynchronizedUseCase.swift */,
+				68F937DC2AAC3B37004F8327 /* GetMissionsFromStorageUseCase.swift */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -138,6 +159,7 @@
 				68F937B82AAAB90E004F8327 /* Model */,
 				688B88F82AAA7C6900CF8C59 /* RemoteConfigProvider.swift */,
 				68F937B02AAA9F44004F8327 /* RemoteDataIsSynProvider.swift */,
+				68F937DE2AAC3BB8004F8327 /* StorageMissionsProvider.swift */,
 			);
 			path = Providers;
 			sourceTree = "<group>";
@@ -188,6 +210,7 @@
 			children = (
 				681E4F7A2AA99B5800DD07DF /* Assets.xcassets */,
 				68F937A72AAA9799004F8327 /* Animations */,
+				68F937EC2AAD07A5004F8327 /* Localizable.strings */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -211,6 +234,7 @@
 		68F937AB2AAA9BAB004F8327 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				68F937E02AACBCF8004F8327 /* Symbols */,
 				68F937D42AAC3270004F8327 /* HomeViewController.swift */,
 				68F937D62AAC32EA004F8327 /* HomeViewModel.swift */,
 				68F937D82AAC39E5004F8327 /* HomeCoordinator.swift */,
@@ -273,6 +297,32 @@
 			path = Storage;
 			sourceTree = "<group>";
 		};
+		68F937E02AACBCF8004F8327 /* Symbols */ = {
+			isa = PBXGroup;
+			children = (
+				68F937E12AACBD17004F8327 /* MissionTableViewCell.swift */,
+			);
+			path = Symbols;
+			sourceTree = "<group>";
+		};
+		68F937E32AACBD58004F8327 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				68F937E42AACBD77004F8327 /* UITableView+Extensions.swift */,
+				68F937EF2AAD0850004F8327 /* String+Extensions.swift */,
+				68F937F42AAD1613004F8327 /* UIImageView+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		68F937F12AAD08AC004F8327 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				68F937F22AAD08C4004F8327 /* Localize.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -320,6 +370,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"es-419",
 			);
 			mainGroup = 681E4F652AA99B5700DD07DF;
 			packageReferences = (
@@ -342,6 +393,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				681E4F7E2AA99B5800DD07DF /* LaunchScreen.storyboard in Resources */,
+				68F937EA2AAD07A5004F8327 /* Localizable.strings in Resources */,
 				68F937AA2AAA97BA004F8327 /* splash_animation.json in Resources */,
 				681E4F7B2AA99B5800DD07DF /* Assets.xcassets in Resources */,
 			);
@@ -358,11 +410,16 @@
 				681E4F722AA99B5700DD07DF /* AppDelegate.swift in Sources */,
 				689B94F82AAA661A0019267A /* Coordinator.swift in Sources */,
 				68F937D72AAC32EA004F8327 /* HomeViewModel.swift in Sources */,
+				68F937F52AAD1613004F8327 /* UIImageView+Extensions.swift in Sources */,
+				68F937F02AAD0850004F8327 /* String+Extensions.swift in Sources */,
 				681E4F742AA99B5700DD07DF /* SceneDelegate.swift in Sources */,
 				68F937CC2AAAC9B4004F8327 /* RealmMission.swift in Sources */,
 				68F937AD2AAA9DB8004F8327 /* SynchronizeStorageUseCase.swift in Sources */,
 				68F937C42AAABE08004F8327 /* MisionEndpoint.swift in Sources */,
 				68F937DB2AAC3A30004F8327 /* HomeFactory.swift in Sources */,
+				68F937DD2AAC3B37004F8327 /* GetMissionsFromStorageUseCase.swift in Sources */,
+				68F937E52AACBD77004F8327 /* UITableView+Extensions.swift in Sources */,
+				68F937E22AACBD17004F8327 /* MissionTableViewCell.swift in Sources */,
 				688B88F22AAA7B1C00CF8C59 /* SplashViewModel.swift in Sources */,
 				68F937C22AAABDE1004F8327 /* APIConfiguration.swift in Sources */,
 				68F937C62AAABF7B004F8327 /* APIClient.swift in Sources */,
@@ -371,7 +428,9 @@
 				68F937BB2AAAB977004F8327 /* MissionResponseModel.swift in Sources */,
 				688B88F62AAA7BB300CF8C59 /* SynchronizeRemoteVariablesUseCase.swift in Sources */,
 				68F937BE2AAABCC1004F8327 /* APIRouter.swift in Sources */,
+				68F937F32AAD08C4004F8327 /* Localize.swift in Sources */,
 				68F937CE2AAACBCD004F8327 /* StorageClient.swift in Sources */,
+				68F937DF2AAC3BB8004F8327 /* StorageMissionsProvider.swift in Sources */,
 				689B94F32AAA653C0019267A /* SplashViewController.swift in Sources */,
 				68F937B12AAA9F44004F8327 /* RemoteDataIsSynProvider.swift in Sources */,
 				68F937B72AAAB5EF004F8327 /* Mission.swift in Sources */,
@@ -391,8 +450,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				681E4F7D2AA99B5800DD07DF /* Base */,
+				68F937E62AAD073F004F8327 /* es-419 */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		68F937EC2AAD07A5004F8327 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				68F937EB2AAD07A5004F8327 /* es-419 */,
+				68F937EE2AAD07B4004F8327 /* en */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -402,6 +471,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -462,6 +532,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";

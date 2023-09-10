@@ -18,6 +18,8 @@ class RealmMission: Object {
 }
 
 class RealmLinks: Object {
+    @objc dynamic var missionPatch: String = ""
+    @objc dynamic var missionPatchSmall: String = ""
     @objc dynamic var articleLink: String = ""
     @objc dynamic var youtubeId: String = ""
     let flickrImages = List<String>()

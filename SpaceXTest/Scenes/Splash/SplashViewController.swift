@@ -37,8 +37,12 @@ class SplashViewController: UIViewController {
         view.backgroundColor = .white
         self.addSubViews()
         self.addConstraints()
-        viewModel.fetchSynchronize()
         animation.play()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        viewModel.fetchSynchronize()
     }
     
     private func addSubViews() {

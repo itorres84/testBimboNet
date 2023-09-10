@@ -18,6 +18,8 @@ final class StorageClient {
             realmMission.links = RealmLinks()
             realmMission.links?.articleLink = mission.links.articleLink ?? ""
             realmMission.links?.youtubeId = mission.links.youtubeId
+            realmMission.links?.missionPatch = mission.links.missionPatch ?? ""
+            realmMission.links?.missionPatchSmall = mission.links.missionPatchSmall ?? ""
             if let images: [String] = mission.links.flickrImages {
                 realmMission.links?.flickrImages.append(objectsIn: images)
             }
@@ -37,6 +39,15 @@ final class StorageClient {
             }
         }
         completion()
+    }
+    
+    static func getMissions(completion: @escaping ([RealmMission]) -> ()) {
+        do {
+            let realm: Realm = try Realm()
+            completion(Array(realm.objects(RealmMission.self)))
+        } catch {
+            debugPrint("Failed get missions of realm: \(error.localizedDescription)")
+        }
     }
     
 }
