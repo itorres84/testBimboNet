@@ -12,6 +12,9 @@
 		681E4F7B2AA99B5800DD07DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 681E4F7A2AA99B5800DD07DF /* Assets.xcassets */; };
 		681E4F7E2AA99B5800DD07DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 681E4F7C2AA99B5800DD07DF /* LaunchScreen.storyboard */; };
 		684B7C722AA9A0AD004DBE54 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 684B7C712AA9A0AD004DBE54 /* Alamofire */; };
+		687753892AB010E900F8BFFE /* InfoWebViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 687753882AB010E900F8BFFE /* InfoWebViewViewController.swift */; };
+		6877538C2AB0139400F8BFFE /* YouTubeiOSPlayerHelper in Frameworks */ = {isa = PBXBuildFile; productRef = 6877538B2AB0139400F8BFFE /* YouTubeiOSPlayerHelper */; };
+		6877538E2AB013AC00F8BFFE /* YoutubeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6877538D2AB013AC00F8BFFE /* YoutubeViewController.swift */; };
 		688B88F22AAA7B1C00CF8C59 /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688B88F12AAA7B1C00CF8C59 /* SplashViewModel.swift */; };
 		688B88F62AAA7BB300CF8C59 /* SynchronizeRemoteVariablesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688B88F52AAA7BB300CF8C59 /* SynchronizeRemoteVariablesUseCase.swift */; };
 		688B88F92AAA7C6900CF8C59 /* RemoteConfigProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688B88F82AAA7C6900CF8C59 /* RemoteConfigProvider.swift */; };
@@ -20,6 +23,15 @@
 		689B94F52AAA65DD0019267A /* SplashCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689B94F42AAA65DD0019267A /* SplashCoordinator.swift */; };
 		689B94F82AAA661A0019267A /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689B94F72AAA661A0019267A /* Coordinator.swift */; };
 		689B94FB2AAA67170019267A /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689B94FA2AAA67170019267A /* AppCoordinator.swift */; };
+		68D8AA722AAF9CF5002B7B96 /* GeneralInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D8AA712AAF9CF5002B7B96 /* GeneralInfoTableViewCell.swift */; };
+		68D8AA742AAF9D01002B7B96 /* CarrouselTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D8AA732AAF9D01002B7B96 /* CarrouselTableViewCell.swift */; };
+		68D8AA762AAF9D18002B7B96 /* DescriptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D8AA752AAF9D18002B7B96 /* DescriptionTableViewCell.swift */; };
+		68D8AA782AAF9D25002B7B96 /* LinksTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D8AA772AAF9D25002B7B96 /* LinksTableViewCell.swift */; };
+		68D8AA7A2AAFA7CA002B7B96 /* MissionDetailCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D8AA792AAFA7CA002B7B96 /* MissionDetailCoordinator.swift */; };
+		68D8AA7C2AAFA800002B7B96 /* MissionDetailFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D8AA7B2AAFA800002B7B96 /* MissionDetailFactory.swift */; };
+		68D8AA7E2AAFCF33002B7B96 /* UICollectionView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D8AA7D2AAFCF33002B7B96 /* UICollectionView+Extensions.swift */; };
+		68D8AA802AAFD02C002B7B96 /* BannerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D8AA7F2AAFD02C002B7B96 /* BannerCollectionViewCell.swift */; };
+		68D8AA832AAFF736002B7B96 /* LinkButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D8AA822AAFF736002B7B96 /* LinkButtonView.swift */; };
 		68F937A52AAA9781004F8327 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 68F937A42AAA9781004F8327 /* Lottie */; };
 		68F937AA2AAA97BA004F8327 /* splash_animation.json in Resources */ = {isa = PBXBuildFile; fileRef = 68F937A92AAA97BA004F8327 /* splash_animation.json */; };
 		68F937AD2AAA9DB8004F8327 /* SynchronizeStorageUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F937AC2AAA9DB8004F8327 /* SynchronizeStorageUseCase.swift */; };
@@ -48,6 +60,9 @@
 		68F937F02AAD0850004F8327 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F937EF2AAD0850004F8327 /* String+Extensions.swift */; };
 		68F937F32AAD08C4004F8327 /* Localize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F937F22AAD08C4004F8327 /* Localize.swift */; };
 		68F937F52AAD1613004F8327 /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F937F42AAD1613004F8327 /* UIImageView+Extensions.swift */; };
+		68F937F82AAD5D14004F8327 /* MissionDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F937F72AAD5D14004F8327 /* MissionDetailViewController.swift */; };
+		68F937FA2AAD5D46004F8327 /* MissionDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F937F92AAD5D46004F8327 /* MissionDetailViewModel.swift */; };
+		68F937FC2AAD5D98004F8327 /* MissionDetailSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F937FB2AAD5D98004F8327 /* MissionDetailSection.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +72,8 @@
 		681E4F7A2AA99B5800DD07DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		681E4F7D2AA99B5800DD07DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		681E4F7F2AA99B5800DD07DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		687753882AB010E900F8BFFE /* InfoWebViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoWebViewViewController.swift; sourceTree = "<group>"; };
+		6877538D2AB013AC00F8BFFE /* YoutubeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeViewController.swift; sourceTree = "<group>"; };
 		688B88F12AAA7B1C00CF8C59 /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
 		688B88F52AAA7BB300CF8C59 /* SynchronizeRemoteVariablesUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SynchronizeRemoteVariablesUseCase.swift; sourceTree = "<group>"; };
 		688B88F82AAA7C6900CF8C59 /* RemoteConfigProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteConfigProvider.swift; sourceTree = "<group>"; };
@@ -65,6 +82,15 @@
 		689B94F42AAA65DD0019267A /* SplashCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashCoordinator.swift; sourceTree = "<group>"; };
 		689B94F72AAA661A0019267A /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		689B94FA2AAA67170019267A /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		68D8AA712AAF9CF5002B7B96 /* GeneralInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralInfoTableViewCell.swift; sourceTree = "<group>"; };
+		68D8AA732AAF9D01002B7B96 /* CarrouselTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarrouselTableViewCell.swift; sourceTree = "<group>"; };
+		68D8AA752AAF9D18002B7B96 /* DescriptionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionTableViewCell.swift; sourceTree = "<group>"; };
+		68D8AA772AAF9D25002B7B96 /* LinksTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinksTableViewCell.swift; sourceTree = "<group>"; };
+		68D8AA792AAFA7CA002B7B96 /* MissionDetailCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionDetailCoordinator.swift; sourceTree = "<group>"; };
+		68D8AA7B2AAFA800002B7B96 /* MissionDetailFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionDetailFactory.swift; sourceTree = "<group>"; };
+		68D8AA7D2AAFCF33002B7B96 /* UICollectionView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extensions.swift"; sourceTree = "<group>"; };
+		68D8AA7F2AAFD02C002B7B96 /* BannerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerCollectionViewCell.swift; sourceTree = "<group>"; };
+		68D8AA822AAFF736002B7B96 /* LinkButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkButtonView.swift; sourceTree = "<group>"; };
 		68F937A92AAA97BA004F8327 /* splash_animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = splash_animation.json; sourceTree = "<group>"; };
 		68F937AC2AAA9DB8004F8327 /* SynchronizeStorageUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SynchronizeStorageUseCase.swift; sourceTree = "<group>"; };
 		68F937AE2AAA9DFB004F8327 /* IsRemoteDataIsSynchronizedUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsRemoteDataIsSynchronizedUseCase.swift; sourceTree = "<group>"; };
@@ -93,6 +119,9 @@
 		68F937EF2AAD0850004F8327 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		68F937F22AAD08C4004F8327 /* Localize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localize.swift; sourceTree = "<group>"; };
 		68F937F42AAD1613004F8327 /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
+		68F937F72AAD5D14004F8327 /* MissionDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionDetailViewController.swift; sourceTree = "<group>"; };
+		68F937F92AAD5D46004F8327 /* MissionDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionDetailViewModel.swift; sourceTree = "<group>"; };
+		68F937FB2AAD5D98004F8327 /* MissionDetailSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionDetailSection.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +132,7 @@
 				68F937C92AAAC700004F8327 /* RealmSwift in Frameworks */,
 				684B7C722AA9A0AD004DBE54 /* Alamofire in Frameworks */,
 				68F937A52AAA9781004F8327 /* Lottie in Frameworks */,
+				6877538C2AB0139400F8BFFE /* YouTubeiOSPlayerHelper in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,6 +171,15 @@
 			path = SpaceXTest;
 			sourceTree = "<group>";
 		};
+		687753872AB010CC00F8BFFE /* WebView */ = {
+			isa = PBXGroup;
+			children = (
+				687753882AB010E900F8BFFE /* InfoWebViewViewController.swift */,
+				6877538D2AB013AC00F8BFFE /* YoutubeViewController.swift */,
+			);
+			path = WebView;
+			sourceTree = "<group>";
+		};
 		688B88F42AAA7B5500CF8C59 /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
@@ -167,6 +206,8 @@
 		689B94F02AAA65030019267A /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				687753872AB010CC00F8BFFE /* WebView */,
+				68F937F62AAD5CE7004F8327 /* MissionDetail */,
 				68F937AB2AAA9BAB004F8327 /* Home */,
 				689B94F92AAA67040019267A /* Main */,
 				689B94F12AAA65230019267A /* Splash */,
@@ -203,6 +244,19 @@
 				689B94FA2AAA67170019267A /* AppCoordinator.swift */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		68D8AA702AAF9CDC002B7B96 /* Symbols */ = {
+			isa = PBXGroup;
+			children = (
+				68D8AA712AAF9CF5002B7B96 /* GeneralInfoTableViewCell.swift */,
+				68D8AA732AAF9D01002B7B96 /* CarrouselTableViewCell.swift */,
+				68D8AA752AAF9D18002B7B96 /* DescriptionTableViewCell.swift */,
+				68D8AA772AAF9D25002B7B96 /* LinksTableViewCell.swift */,
+				68D8AA7F2AAFD02C002B7B96 /* BannerCollectionViewCell.swift */,
+				68D8AA822AAFF736002B7B96 /* LinkButtonView.swift */,
+			);
+			path = Symbols;
 			sourceTree = "<group>";
 		};
 		68F937A62AAA978E004F8327 /* Resources */ = {
@@ -311,6 +365,7 @@
 				68F937E42AACBD77004F8327 /* UITableView+Extensions.swift */,
 				68F937EF2AAD0850004F8327 /* String+Extensions.swift */,
 				68F937F42AAD1613004F8327 /* UIImageView+Extensions.swift */,
+				68D8AA7D2AAFCF33002B7B96 /* UICollectionView+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -321,6 +376,19 @@
 				68F937F22AAD08C4004F8327 /* Localize.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		68F937F62AAD5CE7004F8327 /* MissionDetail */ = {
+			isa = PBXGroup;
+			children = (
+				68D8AA702AAF9CDC002B7B96 /* Symbols */,
+				68F937F72AAD5D14004F8327 /* MissionDetailViewController.swift */,
+				68F937F92AAD5D46004F8327 /* MissionDetailViewModel.swift */,
+				68F937FB2AAD5D98004F8327 /* MissionDetailSection.swift */,
+				68D8AA792AAFA7CA002B7B96 /* MissionDetailCoordinator.swift */,
+				68D8AA7B2AAFA800002B7B96 /* MissionDetailFactory.swift */,
+			);
+			path = MissionDetail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -343,6 +411,7 @@
 				684B7C712AA9A0AD004DBE54 /* Alamofire */,
 				68F937A42AAA9781004F8327 /* Lottie */,
 				68F937C82AAAC700004F8327 /* RealmSwift */,
+				6877538B2AB0139400F8BFFE /* YouTubeiOSPlayerHelper */,
 			);
 			productName = SpaceXTest;
 			productReference = 681E4F6E2AA99B5700DD07DF /* SpaceXTest.app */;
@@ -377,6 +446,7 @@
 				684B7C702AA9A0AD004DBE54 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				68F937A32AAA9781004F8327 /* XCRemoteSwiftPackageReference "lottie-spm" */,
 				68F937C72AAAC700004F8327 /* XCRemoteSwiftPackageReference "realm-swift" */,
+				6877538A2AB0139400F8BFFE /* XCRemoteSwiftPackageReference "youtube-ios-player-helper" */,
 			);
 			productRefGroup = 681E4F6F2AA99B5700DD07DF /* Products */;
 			projectDirPath = "";
@@ -408,9 +478,15 @@
 			files = (
 				688B88F92AAA7C6900CF8C59 /* RemoteConfigProvider.swift in Sources */,
 				681E4F722AA99B5700DD07DF /* AppDelegate.swift in Sources */,
+				6877538E2AB013AC00F8BFFE /* YoutubeViewController.swift in Sources */,
+				68D8AA742AAF9D01002B7B96 /* CarrouselTableViewCell.swift in Sources */,
 				689B94F82AAA661A0019267A /* Coordinator.swift in Sources */,
+				68D8AA7E2AAFCF33002B7B96 /* UICollectionView+Extensions.swift in Sources */,
 				68F937D72AAC32EA004F8327 /* HomeViewModel.swift in Sources */,
+				68D8AA722AAF9CF5002B7B96 /* GeneralInfoTableViewCell.swift in Sources */,
+				68D8AA7C2AAFA800002B7B96 /* MissionDetailFactory.swift in Sources */,
 				68F937F52AAD1613004F8327 /* UIImageView+Extensions.swift in Sources */,
+				68F937F82AAD5D14004F8327 /* MissionDetailViewController.swift in Sources */,
 				68F937F02AAD0850004F8327 /* String+Extensions.swift in Sources */,
 				681E4F742AA99B5700DD07DF /* SceneDelegate.swift in Sources */,
 				68F937CC2AAAC9B4004F8327 /* RealmMission.swift in Sources */,
@@ -419,15 +495,20 @@
 				68F937DB2AAC3A30004F8327 /* HomeFactory.swift in Sources */,
 				68F937DD2AAC3B37004F8327 /* GetMissionsFromStorageUseCase.swift in Sources */,
 				68F937E52AACBD77004F8327 /* UITableView+Extensions.swift in Sources */,
+				68D8AA802AAFD02C002B7B96 /* BannerCollectionViewCell.swift in Sources */,
+				68D8AA762AAF9D18002B7B96 /* DescriptionTableViewCell.swift in Sources */,
 				68F937E22AACBD17004F8327 /* MissionTableViewCell.swift in Sources */,
 				688B88F22AAA7B1C00CF8C59 /* SplashViewModel.swift in Sources */,
 				68F937C22AAABDE1004F8327 /* APIConfiguration.swift in Sources */,
 				68F937C62AAABF7B004F8327 /* APIClient.swift in Sources */,
+				68D8AA832AAFF736002B7B96 /* LinkButtonView.swift in Sources */,
+				68D8AA782AAF9D25002B7B96 /* LinksTableViewCell.swift in Sources */,
 				68F937B42AAAA02F004F8327 /* KeysUserDefaults.swift in Sources */,
 				68F937D52AAC3270004F8327 /* HomeViewController.swift in Sources */,
 				68F937BB2AAAB977004F8327 /* MissionResponseModel.swift in Sources */,
 				688B88F62AAA7BB300CF8C59 /* SynchronizeRemoteVariablesUseCase.swift in Sources */,
 				68F937BE2AAABCC1004F8327 /* APIRouter.swift in Sources */,
+				687753892AB010E900F8BFFE /* InfoWebViewViewController.swift in Sources */,
 				68F937F32AAD08C4004F8327 /* Localize.swift in Sources */,
 				68F937CE2AAACBCD004F8327 /* StorageClient.swift in Sources */,
 				68F937DF2AAC3BB8004F8327 /* StorageMissionsProvider.swift in Sources */,
@@ -437,8 +518,11 @@
 				688B88FC2AAA86F300CF8C59 /* SplashFactory.swift in Sources */,
 				68F937D92AAC39E5004F8327 /* HomeCoordinator.swift in Sources */,
 				68F937AF2AAA9DFB004F8327 /* IsRemoteDataIsSynchronizedUseCase.swift in Sources */,
+				68D8AA7A2AAFA7CA002B7B96 /* MissionDetailCoordinator.swift in Sources */,
+				68F937FA2AAD5D46004F8327 /* MissionDetailViewModel.swift in Sources */,
 				689B94F52AAA65DD0019267A /* SplashCoordinator.swift in Sources */,
 				689B94FB2AAA67170019267A /* AppCoordinator.swift in Sources */,
+				68F937FC2AAD5D98004F8327 /* MissionDetailSection.swift in Sources */,
 				68F937C02AAABCEA004F8327 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -669,6 +753,14 @@
 				minimumVersion = 5.0.0;
 			};
 		};
+		6877538A2AB0139400F8BFFE /* XCRemoteSwiftPackageReference "youtube-ios-player-helper" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/youtube/youtube-ios-player-helper.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 		68F937A32AAA9781004F8327 /* XCRemoteSwiftPackageReference "lottie-spm" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/airbnb/lottie-spm.git";
@@ -692,6 +784,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 684B7C702AA9A0AD004DBE54 /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
+		};
+		6877538B2AB0139400F8BFFE /* YouTubeiOSPlayerHelper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6877538A2AB0139400F8BFFE /* XCRemoteSwiftPackageReference "youtube-ios-player-helper" */;
+			productName = YouTubeiOSPlayerHelper;
 		};
 		68F937A42AAA9781004F8327 /* Lottie */ = {
 			isa = XCSwiftPackageProductDependency;
