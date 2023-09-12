@@ -20,6 +20,7 @@ final class AppCoordinator: Coordinator {
         let viewController = splashCoordinator.start()
         window.rootViewController = viewController
         window.makeKeyAndVisible()
+        window.overrideUserInterfaceStyle = .light
         return viewController
     }
 }

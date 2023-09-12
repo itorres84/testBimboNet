@@ -112,7 +112,15 @@ class MissionTableViewCell: UITableViewCell {
         missionPatchImageView.imageFromUrl(urlString: mission.links.missionPatchSmall)
         labelName.text = mission.missionName
         labelSiteName.text = mission.siteName
-        labelLaunchDate.text = mission.launch
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
+        let date = formatter.date(from: mission.launch)
+        labelLaunchDate.text = date?.description
+        if let finalDate = date {
+            formatter.dateFormat = "EEEE, MMM d, yyyy"
+            let newDate = formatter.string(from: finalDate)
+            labelLaunchDate.text = newDate.description
+        }
     }
     
 }

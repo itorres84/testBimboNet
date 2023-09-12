@@ -29,7 +29,17 @@ final class HomeCoordinatorImp: HomeCoordinator {
     }
     
     func openDeatil(mission: Mission) {
-        print("openDetail")
+        guard let navigationController = navigationController else {
+            return
+        }
+        let factory: MissionDetailFactory = MissionDetailFactoryImp()
+        let missionDetailCoordinator: MissionDetailCoordinatorImp = MissionDetailCoordinatorImp(factory: factory,
+                                                                                                navigationController: navigationController,
+                                                                                                mission: mission)
+        let viewController: UIViewController = missionDetailCoordinator.start()
+        DispatchQueue.main.async { [weak self] in
+            self?.navigationController?.pushViewController(viewController, animated: false)
+        }
     }
 }
 
